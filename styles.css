@@ -21,7 +21,7 @@ body {
   min-width: 500px;
 }
 
-.new-tasks-container {
+.new-task-container {
   background-color: #fff;
   padding: 30px 20px;
   border-radius: 5px;
@@ -29,7 +29,7 @@ body {
   display: flex;
 }
 
-.new-tasks-container input {
+.new-task-container input {
   flex: 3;
   font-size:1rem;
   border: 2px solid #d1d3d4;
@@ -38,7 +38,7 @@ body {
   font-weight:500;
 }
 
-.new-tasks-container input:focus {
+.new-task-container input:focus {
   outline: none;
   border-color: #41b883;
 }
@@ -63,4 +63,12 @@ body {
   margin-top: 60px;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.error::placeholder {
+  color: red;
 }
