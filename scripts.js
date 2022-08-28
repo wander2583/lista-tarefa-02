@@ -1,5 +1,5 @@
-const inputElement = document.querySelector(".new-tasks-input");
-const addTaskButton = document.querySelector(".new-tasks-button");
+const inputElement = document.querySelector(".new-task-input");
+const addTaskButton = document.querySelector(".new-task-button");
 
 const taskItemContainer = document.querySelector(".tasks-container");
 
@@ -27,6 +27,8 @@ const handleAddTask = () => {
   taskItemContainer.appendChild(taskContent);
   taskItemContainer.appendChild(deleteItem);
   tasksContainer.appendChild(taskItemContainer);
+
+  inputElement.value ="";
 
 };
 
